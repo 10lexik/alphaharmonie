@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||               FORMULAIRE !                  ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+form {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#contactBtn {
+	top: 60px;
+	margin: 2em auto ;
+	width:208px;
+	height:81px;
+	background:none;
+	padding-bottom:3em;
+}
+	
+#contactBtn h3 {
+}
+
+
+#contact-form {
+	width: 280px;
+	zoom: 1;
+	position: relative;
+	text-align:left;
+	margin: 0 auto 0;
+	padding-bottom: 20px;
+}
+
+
+#contact-form textarea {
+	background:#ffe;
+	-webkit-border-radius: 3px;
+  	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 100%;
+	font-size:15px;
+    margin-bottom: 2px;
+	}
+	
+
+
+#contact-form select,
+#contact-form label {
+    font-size:15px;
+    margin-bottom: 2px;
+    color:white;
+	width:100%;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+	background-color:#ffe;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    width: 270px;
+    border: 1px solid #E1D8C7;
+	border-top-width:3px;
+    margin-bottom:20px;
+    padding:4px;
+}
+
+#contact-form textarea {
+	background:pink;
+	background-color:white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-bottom-width:4px;
+	border-top-width:1px;
+	}
+
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+	background-color:#DAE9E9;
+    border: 1px solid #DAE9E9;
+	border-top-width:3px;
+	-moz-box-shadow:0 3px 1px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow:0 3px 1px rgba(0, 0, 0, 0.8);
+    -o-box-shadow:0 3px 1px rgba(0, 0, 0, 0.8);
+    box-shadow:0 3px 1px rgba(0, 0, 0, 0.8);
+
+}
+
+#contact-form textarea:focus {border-bottom-width:4px;border-top-width:1px;}
+
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+    width: 100%;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#DAE9E9; 
+	font-size:15px;
+}
+
+#contact-form #inlineForm2 input#submit-button {
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    background-color:#71B1B1;
+    -moz-border-radius:8px;
+}
+
+.ui-btn-text {color:white;}
+
+
+#contact-form #inlineForm2 input#submit-button:hover {
+    background-color: #A6CFDD;
+}
+
+#contact-form input#submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url('img/loading.gif');
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+
+#errors {
+	border: solid 1px #E58E8E;
+	padding: 10px;
+	margin: 0 auto 15px;
+	display: block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #FFE6E6 url('img/cancel_48.png') no-repeat 245px center;
+	display: none;
+	width: 280px;
+	font-size:14px;
+	margin: 1em auto;
+	}
+	
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+
+#errors li:before {
+    content: ''; 
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';    
+}
+
+
+#success {
+	border: solid 1px #83D186;
+	padding: 10px;
+	margin: 0 auto 15px;
+	display: block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #D3EDD3 url('img/accepted_48.png') no-repeat 245px center;
+	display: none;
+	width: 280px;
+	font-size: 14px;
+	height: 25px;
+	padding-top: 20px;
+	color: green;
+	
+}
+
+#errors.visible, #success.visible {
+    display:block;  
+}
+
+#contact-form p#req-field-desc {
+    font-style:italic;
+    color:white;
+	font-size:11px;
+	width:auto;
+	text-align:left;
+}
+
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#BBA;
+    font-style:italic;
+}
+
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#BBA;
+    font-style:italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#BBA;
+    font-style:italic;
+}
+
+
+@media only screen and (min-width: 480px) {
+#contact-form {
+	position:relative;
+	width:432px; 
+	overflow:hidden;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+width:422px;
+}
+}
+
+
+@media only screen and (min-width: 624px) {
+/*FORMULAIRE*/
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+	#contact-form {width:584px;}
+
+#contact-form section#inlineForm, #contact-form section#inlineForm2, #contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+	vertical-align: top;
+	margin: 0 24px 1em 0;
+	width: 270px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	text-align:left;	
+}
+
+#contact-form section#inlineForm2 { margin:0;}
+
+ {
+width:270px;
+}
+
+}
+
+@media only screen and (min-width: 960px){
+#contact-form section#inlineForm, #contact-form section#inlineForm2, #contact-form input, 
+#contact-form select, #contact-form textarea{
+	width: 422px;
+}
+#contact-form {width:888px;}
+}
+	
